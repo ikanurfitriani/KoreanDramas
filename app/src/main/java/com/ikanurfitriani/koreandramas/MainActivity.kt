@@ -195,10 +195,12 @@ fun KoreanDramasGrid(modifier: Modifier = Modifier) {
                     .size(38.dp)
                     .clip(RoundedCornerShape(10.dp))
             )
-            // Untuk mengatur dan menampilkan text
+            // Untuk mengatur dan menampilkan informasi pembuat aplikasi
             Text(
                 text = "APK dibuat oleh : Ika Nurfitriani (205410116)",
+                // Untuk menampilkan teks kecil
                 style = MaterialTheme.typography.bodySmall,
+                // Membuat teks menjadi tebal
                 fontWeight = FontWeight.Bold,
             )
         }
@@ -246,6 +248,7 @@ fun KoreanDramasCard(drama: Drama, modifier: Modifier = Modifier) {
                 Text(
                     text = stringResource(id = drama.name),
                     style = MaterialTheme.typography.headlineMedium,
+                    fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(
                         bottom = 4.dp
                     )
